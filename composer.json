@@ -1,0 +1,25 @@
+{
+    "name": "rickselby/laravel-permissions-setup",
+    "description": "Setting up permissions",
+    "keywords": [
+        "rickselby",
+        "laravel",
+        "permission"
+    ],
+    "homepage": "https://github.com/rickselby/laravel-permissions-setup",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rick Selby",
+            "email": "rick@selby-family.co.uk"
+        }
+    ],
+    "require": {
+        "spatie/laravel-permission": "^1.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "RickSelby\\Permissions\\": "src"
+        }
+    }
+}
