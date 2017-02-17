@@ -16,7 +16,7 @@ $ composer require rickselby/laravel-permissions-setup
 You can publish the default permissions config file with
 
 ```bash
-php artisan vendor:publish --provider="RickSelby\Permissions\PermissionServiceProvider" --tag="config"
+php artisan vendor:publish --provider="RickSelby\Permissions\PermissionsServiceProvider" --tag="config"
 ```
 
 Then, add the service provider to the providers array:
@@ -27,4 +27,9 @@ Then, add the service provider to the providers array:
     ...
     RickSelby\Permissions\PermissionServiceProvider::class,
 ];
+```
+Now, you can load and reload the list of permissions with the artisan command:
+
+```bash
+php artisan permissions:update
 ```
