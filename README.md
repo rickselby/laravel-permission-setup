@@ -13,21 +13,22 @@ Install the package using composer:
 $ composer require rickselby/laravel-permissions-setup
 ```
 
-You can publish the default permissions config file with
-
-```bash
-php artisan vendor:publish --provider="RickSelby\Permissions\PermissionsServiceProvider" --tag="config"
-```
-
 Then, add the service provider to the providers array:
 
 ```php
 // config/app.php
 'providers' => [
     ...
-    RickSelby\Permissions\PermissionServiceProvider::class,
+    RickSelby\Permissions\PermissionsServiceProvider::class,
 ];
 ```
+You can publish the default permissions config file with
+
+```bash
+php artisan vendor:publish --provider="RickSelby\Permissions\PermissionsServiceProvider" --tag="config"
+```
+
+
 Now, you can load and reload the list of permissions with the artisan command:
 
 ```bash
