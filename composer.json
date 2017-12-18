@@ -1,12 +1,12 @@
 {
-    "name": "rickselby/laravel-permissions-setup",
+    "name": "rickselby/laravel-permission-setup",
     "description": "Setting up permissions",
     "keywords": [
         "rickselby",
         "laravel",
         "permission"
     ],
-    "homepage": "https://github.com/rickselby/laravel-permissions-setup",
+    "homepage": "https://github.com/rickselby/laravel-permission-setup",
     "license": "MIT",
     "authors": [
         {
@@ -15,17 +15,18 @@
         }
     ],
     "require": {
-        "spatie/laravel-permission": "^2.0"
+        "spatie/laravel-permission": "^2.0",
+        "illuminate/config": "~5.4.0|~5.5.0"
     },
     "autoload": {
         "psr-4": {
-            "RickSelby\\Permissions\\": "src"
+            "RickSelby\\Permission\\": "src"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "RickSelby\\Permissions\\PermissionsServiceProvider"
+                "RickSelby\\Permission\\PermissionServiceProvider"
             ]
         }
     }
