@@ -10,27 +10,27 @@ don't already exist).
 Install the package using composer:
 
 ``` bash
-$ composer require rickselby/laravel-permissions-setup
+$ composer require rickselby/laravel-permission-setup
 ```
 
-Then, add the service provider to the providers array:
+Then, if using Laravel 5.4, add the service provider to the providers array:
 
 ```php
 // config/app.php
 'providers' => [
     ...
-    RickSelby\Permissions\PermissionsServiceProvider::class,
+    RickSelby\Permission\PermissionServiceProvider::class,
 ];
 ```
 You can publish the default permissions config file with
 
 ```bash
-php artisan vendor:publish --provider="RickSelby\Permissions\PermissionsServiceProvider" --tag="config"
+php artisan vendor:publish --provider="RickSelby\Permission\PermissionServiceProvider" --tag="config"
 ```
 
 
 Now, you can load and reload the list of permissions with the artisan command:
 
 ```bash
-php artisan permissions:update
+php artisan permission:update
 ```
