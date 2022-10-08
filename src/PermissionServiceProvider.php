@@ -18,14 +18,14 @@ class PermissionServiceProvider extends ServiceProvider
     {
         $this->publishes(
             [
-                __DIR__ . '/../resources/config/permissions.php' => $this->app->configPath() . '/' . 'permissions.php',
+                __DIR__.'/../resources/config/permissions.php' => $this->app->configPath().'/'.'permissions.php',
             ],
             'config'
         );
     }
 
     /**
-     * Register the commands
+     * Register the commands.
      */
     public function register()
     {
